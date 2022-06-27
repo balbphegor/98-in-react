@@ -1,8 +1,8 @@
 import React from "react";
 
-const Icon = ({ title }) => {
+const Icon = ({ title, createPanel }) => {
   return (
-    <div className="icon">
+    <div onClick={(event) => createPanel(title)} className="icon">
       <a className="icon-anchor" href="/#">
         <img className="icon-img" src={require("./image.png")} alt="123" />
         <span className="icon-name">{title}</span>

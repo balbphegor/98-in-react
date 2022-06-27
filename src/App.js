@@ -5,26 +5,29 @@ import Taskbar from "./Taskbar";
 import TaskbarTab from "./TaskbarTab";
 import Icon from "./Icon";
 function App() {
+  // z-index counter
   const [foremostIndex, setForemostIndex] = useState(1);
+  /// panel index counter
+  const [distId, setDistId] = useState(1);
   const updateIndex = (id) => {
     setForemostIndex(foremostIndex + 1);
     document.getElementById(`panel-${id}`).style.zIndex = foremostIndex;
   };
-  const [contentArray, setContentArray] = useState([
-    [0, "About me!"],
-    [2, "Home stretch"],
-  ]);
+  const [contentArray, setContentArray] = useState([[0, "About me!"]]);
   const closePanel = (id) => {
     setContentArray(contentArray.filter((x) => x[0] !== id));
   };
   const showPanel = (id) => {
     document.getElementById(`panel-${id}`).style.display = "";
   };
+  const createPanel = (title) => {
+    setContentArray([...contentArray, [distId, title]]);
+    setDistId(distId + 1);
+  };
+  //createPanel={createPanel}
   return (
     <div className="App">
-      <Icon title={"yeet"} />
-      <Icon title={"yeet"} />
-      <Icon title={"yeet"} />
+      <Icon createPanel={createPanel} title={"yeet"} />
       <Taskbar>
         {contentArray.map((x) => (
           <TaskbarTab

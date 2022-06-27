@@ -13,18 +13,21 @@ const Panel = ({ children, updateIndex, id, title, closePanel }) => {
   const refTopLeft = useRef(null);
   const refBottomRight = useRef(null);
   const refBottomLeft = useRef(null);
+
   const hidePanel = () => {
     document.getElementById(`panel-${id}`).style.display = "none";
   };
+
   useEffect(() => {
     // declarations
     const panel = ref.current;
     const styles = window.getComputedStyle(panel);
     let width = parseInt(styles.width, 10);
     let height = parseInt(styles.height, 10);
-    let y = 0;
-    let x = 0;
-    // header
+    let y = 100;
+    let x = 100;
+
+    // header drag
     const onMouseDownHeader = (event) => {
       x = event.clientX;
       y = event.clientY;
@@ -46,6 +49,7 @@ const Panel = ({ children, updateIndex, id, title, closePanel }) => {
       document.removeEventListener("mousemove", onMouseMoveHeader);
     };
 
+    // side handles
     // top handle
     const onMouseDownHandleTop = (event) => {
       y = event.clientY;
@@ -108,7 +112,6 @@ const Panel = ({ children, updateIndex, id, title, closePanel }) => {
     };
 
     //right
-
     const onMouseDownHandleRight = (event) => {
       x = event.clientX;
       document.addEventListener("mousemove", onMouseDragHandleRight);
@@ -127,8 +130,9 @@ const Panel = ({ children, updateIndex, id, title, closePanel }) => {
       document.removeEventListener("mousemove", onMouseDragHandleRight);
     };
 
-    // top right
+    // corner drags
 
+    // top right
     const onMouseDownHandleTopRight = (event) => {
       x = event.clientX;
       y = event.clientY;
@@ -155,7 +159,6 @@ const Panel = ({ children, updateIndex, id, title, closePanel }) => {
     };
 
     // top left
-
     const onMouseDownHandleTopLeft = (event) => {
       x = event.clientX;
       y = event.clientY;
@@ -183,7 +186,6 @@ const Panel = ({ children, updateIndex, id, title, closePanel }) => {
     };
 
     // bottom right
-
     const onMouseDownHandleBottomRight = (event) => {
       x = event.clientX;
       y = event.clientY;
@@ -208,7 +210,6 @@ const Panel = ({ children, updateIndex, id, title, closePanel }) => {
     };
 
     // bottom left
-
     const onMouseDownHandleBottomLeft = (event) => {
       x = event.clientX;
       y = event.clientY;
@@ -278,7 +279,6 @@ const Panel = ({ children, updateIndex, id, title, closePanel }) => {
       );
     };
   }, []);
-  //<textarea className="content"></textarea>
   return (
     <div
       onMouseDown={(event) => updateIndex(id)}
