@@ -24,10 +24,18 @@ function App() {
     setContentArray([...contentArray, [distId, title]]);
     setDistId(distId + 1);
   };
-  //createPanel={createPanel}
   return (
     <div className="App">
-      <Icon createPanel={createPanel} title={"yeet"} />
+      <div className="desktop-container">
+        <Icon createPanel={createPanel} title={"About Me!"} />
+        <Icon createPanel={createPanel} title={"Linked-in"} />
+        <Icon createPanel={createPanel} title={"Github"} />
+        <Icon createPanel={createPanel} title={"Contact me!"} />
+        <Icon createPanel={createPanel} title={"blogatog .html"} />
+        <Icon createPanel={createPanel} title={"memes"} />
+        <Icon createPanel={createPanel} title={"celery man"} />
+        <Icon createPanel={createPanel} title={"my watch list"} />
+      </div>
       <Taskbar>
         {contentArray.map((x) => (
           <TaskbarTab

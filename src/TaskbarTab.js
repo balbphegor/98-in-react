@@ -9,7 +9,11 @@ function TaskbarTab({ title, id, updateIndex, showPanel }) {
       }}
       className="taskbar-element"
     >
-      <img className="start-icon" src={require("./start.png")} alt="alt"></img>
+      <img
+        className="start-icon"
+        src={require("./assets/start.png")}
+        alt="alt"
+      ></img>
       <span className="element-text">{title}</span>
     </button>
   );

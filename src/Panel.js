@@ -24,8 +24,8 @@ const Panel = ({ children, updateIndex, id, title, closePanel }) => {
     const styles = window.getComputedStyle(panel);
     let width = parseInt(styles.width, 10);
     let height = parseInt(styles.height, 10);
-    let y = 100;
-    let x = 100;
+    let y = 0;
+    let x = 0;
 
     // header drag
     const onMouseDownHeader = (event) => {
@@ -289,7 +289,7 @@ const Panel = ({ children, updateIndex, id, title, closePanel }) => {
       <div ref={refHeader} className="header">
         <img
           className="header-icon header-decoration"
-          src={require("./icon.png")}
+          src={require("./assets/icon.png")}
           alt="1234"
         />
         <h1 className="header-text header-decoration">{title}</h1>
@@ -297,7 +297,7 @@ const Panel = ({ children, updateIndex, id, title, closePanel }) => {
           <button onClick={(event) => hidePanel(id)} className="header-buttons">
             <img
               id="minimize"
-              src={require("./minimize.png")}
+              src={require("./assets/minimize.png")}
               alt=""
               srcset=""
             />
@@ -306,7 +306,12 @@ const Panel = ({ children, updateIndex, id, title, closePanel }) => {
             onClick={(event) => closePanel(id)}
             className="header-buttons"
           >
-            <img id="minimize" src={require("./close.png")} alt="" srcset="" />
+            <img
+              id="minimize"
+              src={require("./assets/close.png")}
+              alt=""
+              srcset=""
+            />
           </button>
         </div>
       </div>
