@@ -1,43 +1,31 @@
-const constants = {
-  spaghetti: {
-    title: "spaghetti.png",
-    type: "img",
-    src: "https://www.memecreator.org/static/images/memes/5402710.jpg",
-    alt: "one does not simply eat spaghetti",
+export const lookup = {
+  "About Me!": {
+    ispanel: true,
+    type: "textarea",
+    src: "",
   },
-  linkedin: {
-    title: "linkedin",
-    type: "redirection",
+  "Linked-in": {
+    ispanel: false,
     src: "https://www.linkedin.com/in/calvin-lin-b25618143/",
   },
+  Github: {
+    ispanel: false,
+    src: "https://www.github.com/balbphegor",
+  },
+  "how it all started": {
+    ispanel: false,
+    src: "https://98.js.org/",
+  },
   "celery man": {
-    title: "celery man",
+    ispanel: true,
     type: "iframe",
-    src: "https://www.youtube.com/watch?v=maAFcEU6atk",
+    src: "https://www.youtube.com/embed/maAFcEU6atk",
+
+    //<iframe src="https://www.youtube.com/embed/s4BibernJxU"></iframe>
   },
-  about: {
-    title: "about me!",
-    type: "textarea",
-    src: "about.txt",
-  },
-  github: {
-    title: "github",
-    type: "redirection",
-    src: "https://github.com/balbphegor",
-  },
-  "blog-a-tog": {
-    title: "blog",
-    type: "redirection",
-    src: "https://github.com/balbphegor",
-  },
-  "start-easter-egg-1": {
-    title: "I NEED A HERO",
-    type: "iframe",
-    src: "https://www.youtube.com/watch?v=qKZ1Ra1Ns3s",
-  },
-  "start-easter-egg-2": {
-    title: "emein epic rap",
-    type: "iframe",
-    src: "https://www.youtube.com/watch?v=JjRBDJkiRHs",
+  monkey: {
+    ispanel: true,
+    type: "img",
+    src: "monkey.jpeg",
   },
 };

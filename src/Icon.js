@@ -1,8 +1,15 @@
 import React from "react";
-
+import { lookup } from "./constants.js";
 const Icon = ({ title, createPanel }) => {
+  const ispanel = lookup[title]["ispanel"];
+  const source = lookup[title]["src"];
   return (
-    <div onClick={(event) => createPanel(title)} className="icon">
+    <div
+      onClick={(event) =>
+        ispanel ? createPanel(title, source) : window.open(source, "_blank")
+      }
+      className="icon"
+    >
       <a className="icon-anchor" href="/#">
         <img
           className="icon-img"

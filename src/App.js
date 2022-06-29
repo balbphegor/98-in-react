@@ -4,6 +4,7 @@ import Panel from "./Panel";
 import Taskbar from "./Taskbar";
 import TaskbarTab from "./TaskbarTab";
 import Icon from "./Icon";
+import Content from "./Content";
 function App() {
   // z-index counter
   const [foremostIndex, setForemostIndex] = useState(1);
@@ -13,7 +14,7 @@ function App() {
     setForemostIndex(foremostIndex + 1);
     document.getElementById(`panel-${id}`).style.zIndex = foremostIndex;
   };
-  const [contentArray, setContentArray] = useState([[0, "About me!"]]);
+  const [contentArray, setContentArray] = useState([]);
   const closePanel = (id) => {
     setContentArray(contentArray.filter((x) => x[0] !== id));
   };
@@ -30,11 +31,9 @@ function App() {
         <Icon createPanel={createPanel} title={"About Me!"} />
         <Icon createPanel={createPanel} title={"Linked-in"} />
         <Icon createPanel={createPanel} title={"Github"} />
-        <Icon createPanel={createPanel} title={"Contact me!"} />
-        <Icon createPanel={createPanel} title={"blogatog .html"} />
-        <Icon createPanel={createPanel} title={"memes"} />
+        <Icon createPanel={createPanel} title={"how it all started"} />
         <Icon createPanel={createPanel} title={"celery man"} />
-        <Icon createPanel={createPanel} title={"my watch list"} />
+        <Icon createPanel={createPanel} title={"monkey"} />
       </div>
       <Taskbar>
         {contentArray.map((x) => (
@@ -55,7 +54,7 @@ function App() {
           id={x[0]}
           title={x[1]}
         >
-          <textarea></textarea>
+          {<Content title={x[1]}></Content>}
         </Panel>
       ))}
     </div>
