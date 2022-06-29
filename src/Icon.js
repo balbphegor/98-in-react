@@ -1,6 +1,6 @@
 import React from "react";
 import { lookup } from "./constants.js";
-const Icon = ({ title, createPanel }) => {
+const Icon = ({ title, createPanel, icon }) => {
   const ispanel = lookup[title]["ispanel"];
   const source = lookup[title]["src"];
   return (
@@ -13,7 +13,7 @@ const Icon = ({ title, createPanel }) => {
       <a className="icon-anchor" href="/#">
         <img
           className="icon-img"
-          src={require("./assets/image.png")}
+          src={require(`./assets/icon/${icon}`)}
           alt="123"
         />
         <span className="icon-name">{title}</span>

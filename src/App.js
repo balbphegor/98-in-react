@@ -5,6 +5,7 @@ import Taskbar from "./Taskbar";
 import TaskbarTab from "./TaskbarTab";
 import Icon from "./Icon";
 import Content from "./Content";
+import { lookup } from "./constants.js";
 function App() {
   // z-index counter
   const [foremostIndex, setForemostIndex] = useState(1);
@@ -28,12 +29,13 @@ function App() {
   return (
     <div className="App">
       <div className="desktop-container">
-        <Icon createPanel={createPanel} title={"About Me!"} />
-        <Icon createPanel={createPanel} title={"Linked-in"} />
-        <Icon createPanel={createPanel} title={"Github"} />
-        <Icon createPanel={createPanel} title={"how it all started"} />
-        <Icon createPanel={createPanel} title={"celery man"} />
-        <Icon createPanel={createPanel} title={"monkey"} />
+        {Object.keys(lookup).map((key, index) => (
+          <Icon
+            createPanel={createPanel}
+            title={key}
+            icon={lookup[key]["isrc"]}
+          ></Icon>
+        ))}
       </div>
       <Taskbar>
         {contentArray.map((x) => (
