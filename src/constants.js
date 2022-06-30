@@ -28,8 +28,6 @@ export const lookup = {
     type: "iframe",
     src: "https://www.youtube.com/embed/maAFcEU6atk",
     isrc: "celeryman.png",
-
-    //<iframe src="https://www.youtube.com/embed/s4BibernJxU"></iframe>
   },
   monkey: {
     ispanel: true,

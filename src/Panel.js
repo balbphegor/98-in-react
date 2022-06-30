@@ -35,7 +35,6 @@ const Panel = ({ children, updateIndex, id, title, closePanel }) => {
     };
 
     const onMouseMoveHeader = (event) => {
-      console.log(event);
       const rect = panel.getBoundingClientRect();
       const dy = y - event.clientY;
       const dx = x - event.clientX;
