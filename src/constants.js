@@ -37,4 +37,16 @@ export const lookup = {
     src: "monkey.jpeg",
     isrc: "monkey.png",
   },
+  "wordle clone project": {
+    ispanel: false,
+    type: "link",
+    src: "./assets/wordle/wordle.html",
+    isrc: "wordle.png",
+  },
+  "2048 clone project": {
+    ispanel: false,
+    type: "link",
+    src: "./assets/2048/2048.html",
+    isrc: "2048.png",
+  },
 };
