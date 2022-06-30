@@ -3,7 +3,6 @@ import React, { useEffect, useRef } from "react";
 const Panel = ({ children, updateIndex, id, title, closePanel }) => {
   const ref = useRef(null);
   const refHeader = useRef(null);
-
   const refTop = useRef(null);
   const refRight = useRef(null);
   const refBottom = useRef(null);
@@ -36,6 +35,7 @@ const Panel = ({ children, updateIndex, id, title, closePanel }) => {
     };
 
     const onMouseMoveHeader = (event) => {
+      console.log(event);
       const rect = panel.getBoundingClientRect();
       const dy = y - event.clientY;
       const dx = x - event.clientX;

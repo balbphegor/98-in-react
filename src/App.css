@@ -1,5 +1,6 @@
 body {
   background-color: #008083;
+  height: 100%;
 }
 
 /*################################ PANEL STLYES ################################*/
@@ -28,14 +29,14 @@ body {
 }
 
 textarea {
+  box-sizing: border-box;
   height: 90%;
-  width: 96%;
   resize: none;
   border: none;
   outline: none;
-  margin: 0px 0 10px 2%;
   font-size: 20px;
-  margin-top: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .corner {
   position: absolute;
@@ -255,8 +256,13 @@ textarea {
   white-space: nowrap;
 }
 .desktop-container {
+  top: 0;
+  bottom: 0;
+  position: absolute;
   display: inline-flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  height: calc(100% - 30px);
 }
 .icon {
   display: flex;

@@ -17,44 +17,6 @@ export const lookup = {
     src: "https://www.github.com/balbphegor",
     isrc: "github.png",
   },
-
-  1: {
-    ispanel: false,
-    type: "link",
-    src: "https://www.github.com/balbphegor",
-    isrc: "github.png",
-  },
-
-  2: {
-    ispanel: false,
-    type: "link",
-    src: "https://www.github.com/balbphegor",
-    isrc: "github.png",
-  },
-  3: {
-    ispanel: false,
-    type: "link",
-    src: "https://www.github.com/balbphegor",
-    isrc: "github.png",
-  },
-  4: {
-    ispanel: false,
-    type: "link",
-    src: "https://www.github.com/balbphegor",
-    isrc: "github.png",
-  },
-  5: {
-    ispanel: false,
-    type: "link",
-    src: "https://www.github.com/balbphegor",
-    isrc: "github.png",
-  },
-  6: {
-    ispanel: false,
-    type: "link",
-    src: "https://www.github.com/balbphegor",
-    isrc: "github.png",
-  },
   "how it all started": {
     ispanel: false,
     type: "link",
