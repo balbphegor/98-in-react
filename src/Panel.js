@@ -322,9 +322,7 @@ const Panel = ({ children, updateIndex, id, title, closePanel }) => {
           <button className="menu-button">help</button>
         </div>
       </div>
-      <div className="content-wrapper">
-        <div className="content">{children}</div>
-      </div>
+      <div className="content-wrapper">{children}</div>
 
       <div ref={refTop} className="resize handle-top"></div>
       <div ref={refLeft} className="resize handle-left"></div>

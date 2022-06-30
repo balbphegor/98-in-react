@@ -56,7 +56,7 @@ function App() {
           id={x[0]}
           title={x[1]}
         >
-          {<Content title={x[1]}></Content>}
+          {<Content key={x[0]} title={x[1]}></Content>}
         </Panel>
       ))}
     </div>

@@ -17,6 +17,44 @@ export const lookup = {
     src: "https://www.github.com/balbphegor",
     isrc: "github.png",
   },
+
+  1: {
+    ispanel: false,
+    type: "link",
+    src: "https://www.github.com/balbphegor",
+    isrc: "github.png",
+  },
+
+  2: {
+    ispanel: false,
+    type: "link",
+    src: "https://www.github.com/balbphegor",
+    isrc: "github.png",
+  },
+  3: {
+    ispanel: false,
+    type: "link",
+    src: "https://www.github.com/balbphegor",
+    isrc: "github.png",
+  },
+  4: {
+    ispanel: false,
+    type: "link",
+    src: "https://www.github.com/balbphegor",
+    isrc: "github.png",
+  },
+  5: {
+    ispanel: false,
+    type: "link",
+    src: "https://www.github.com/balbphegor",
+    isrc: "github.png",
+  },
+  6: {
+    ispanel: false,
+    type: "link",
+    src: "https://www.github.com/balbphegor",
+    isrc: "github.png",
+  },
   "how it all started": {
     ispanel: false,
     type: "link",
@@ -36,17 +74,5 @@ export const lookup = {
     type: "img",
     src: "monkey.jpeg",
     isrc: "monkey.png",
-  },
-  "wordle clone project": {
-    ispanel: false,
-    type: "link",
-    src: "./assets/wordle/wordle.html",
-    isrc: "wordle.png",
-  },
-  "2048 clone project": {
-    ispanel: false,
-    type: "link",
-    src: "./assets/2048/2048.html",
-    isrc: "2048.png",
   },
 };

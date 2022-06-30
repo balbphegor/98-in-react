@@ -5,13 +5,21 @@ const Content = (title) => {
   const contentType = contentDetails["type"],
     contentSrc = contentDetails["src"];
   if (contentType === "iframe") {
-    return <iframe title={"video"} src={contentSrc}></iframe>;
+    return (
+      <iframe className="content" title={"video"} src={contentSrc}></iframe>
+    );
   }
   if (contentType === "img") {
-    return <img src={require(`./assets/${contentSrc}`)} alt="dead pic lmao" />;
+    return (
+      <img
+        className="content"
+        src={require(`./assets/${contentSrc}`)}
+        alt="dead pic lmao"
+      />
+    );
   }
   if (contentType === "textarea") {
-    return <textarea></textarea>;
+    return <textarea className="content"></textarea>;
   }
 };
 

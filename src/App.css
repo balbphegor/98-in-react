@@ -19,20 +19,14 @@ body {
   background-color: silver;
 }
 .content-wrapper {
-  display: flex;
-  position: absolute;
-  margin-top: 0;
-  margin-left: 1px;
-  left: 0;
-  height: calc(100% - 40px);
-  width: 99%;
-  background-color: white;
+  background-color: black;
+  height: calc(100% - 38px);
 }
 .content {
-  position: relative;
-  height: 100%;
-  width: 100%;
+  max-width: 100%;
+  border: none;
 }
+
 textarea {
   height: 90%;
   width: 96%;
@@ -263,7 +257,6 @@ textarea {
 .desktop-container {
   display: inline-flex;
   flex-direction: column;
-  height: 100%;
 }
 .icon {
   display: flex;
