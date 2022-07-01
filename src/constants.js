@@ -88,11 +88,11 @@ export const text_entries = [
     "My name is Calvin Lin and I like golf, running, beer and all possible combinations of the three. I am bad at golf at a -30 handicap, moderately okay at running and great at drinking beer." +
     "\r\n" +
     "\r\n" +
-    "I graduated the University of Toronto in 2021 (delayed because of COVID) in Mathematics. Check out my blog by clicking the blog icon to read about my thoughts and experiences not limited to my schooling!" +
+    "My favorite beers are Michelob Ultra and Rickard's Red, aquired tastes from drinking at the bar after a nice comfy round of golf. Check out my blog by clicking the blog icon to read about my thoughts and experiences not limited to beer!" +
     "\r\n" +
     "\r\n" +
     "Everyone in my family is artistically inclined to some degree and I like think that web development and design is my personal artistic expression. I strive for clean looking CSS." +
     "\r\n" +
     "\r\n" +
-    "The key to learning is to show up everyday!",
+    "Keep it simple! The key to success is simply showing up everyday!",
 ];
