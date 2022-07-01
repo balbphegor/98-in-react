@@ -91,7 +91,7 @@ export const text_entries = [
     "or click the Linkedin icon! " +
     "\r\n" +
     "\r\n" +
-    "My name is Calvin Lin and I like golf, running, beer and all possible combinations of the three. I am bad at golf - shooting over average 30-40 shots, moderately okay at running and great at drinking beer." +
+    "My name is Calvin Lin and I like golf, running, beer and all possible combinations of the three. I am bad at golf - shooting over average 35-40 shots, moderately okay at running and great at drinking beer." +
     "\r\n" +
     "\r\n" +
     "My favorite beers are Michelob Ultra and Rickard's Red, aquired tastes from drinking at the bar after a nice comfy round of golf. Check out my blog by clicking the blog icon to read about my thoughts and experiences not limited to beer!" +
