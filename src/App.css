@@ -8,9 +8,9 @@ body {
 .panel {
   position: absolute;
   top: 16px;
-  left: 16px;
-  width: 300px;
-  height: 200px;
+  left: 100px;
+  width: 60%;
+  height: 80%;
   user-select: none;
   z-index: 1;
   background-color: white;
@@ -282,6 +282,7 @@ textarea {
   display: block;
   width: 50px;
   word-wrap: break-word;
+  background-color: #008083;
 }
 .tab-container {
   margin: 0px 2px;

@@ -1,5 +1,5 @@
 import React from "react";
-import { lookup } from "./constants.js";
+import { lookup, text_entries } from "./constants.js";
 const Content = (title) => {
   const contentDetails = lookup[title["title"]];
   const contentType = contentDetails["type"],
@@ -19,7 +19,12 @@ const Content = (title) => {
     );
   }
   if (contentType === "textarea") {
-    return <textarea className="content"></textarea>;
+    return (
+      <textarea
+        defaultValue={text_entries[lookup[title["title"]]["text_index"]]}
+        className="content"
+      ></textarea>
+    );
   }
 };
 

@@ -15,7 +15,7 @@ function App() {
     setForemostIndex(foremostIndex + 1);
     document.getElementById(`panel-${id}`).style.zIndex = foremostIndex;
   };
-  const [contentArray, setContentArray] = useState([]);
+  const [contentArray, setContentArray] = useState([[0, "About Me!"]]);
   const closePanel = (id) => {
     setContentArray(contentArray.filter((x) => x[0] !== id));
   };
@@ -27,10 +27,11 @@ function App() {
     setDistId(distId + 1);
   };
   return (
-    <div className="App">
+    <div className="body">
       <div className="desktop-container">
         {Object.keys(lookup).map((key, index) => (
           <Icon
+            key={index}
             createPanel={createPanel}
             title={key}
             icon={lookup[key]["isrc"]}

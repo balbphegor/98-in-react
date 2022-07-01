@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-
+import { lookup } from "./constants";
 const Panel = ({ children, updateIndex, id, title, closePanel }) => {
   const ref = useRef(null);
   const refHeader = useRef(null);
@@ -288,29 +288,19 @@ const Panel = ({ children, updateIndex, id, title, closePanel }) => {
       <div ref={refHeader} className="header">
         <img
           className="header-icon header-decoration"
-          src={require("./assets/icon.png")}
+          src={require(`./assets/icon/${lookup[title]["isrc"]}`)}
           alt="1234"
         />
         <h1 className="header-text header-decoration">{title}</h1>
         <div className="button-container">
           <button onClick={(event) => hidePanel(id)} className="header-buttons">
-            <img
-              id="minimize"
-              src={require("./assets/minimize.png")}
-              alt=""
-              srcset=""
-            />
+            <img id="minimize" src={require("./assets/minimize.png")} alt="" />
           </button>
           <button
             onClick={(event) => closePanel(id)}
             className="header-buttons"
           >
-            <img
-              id="minimize"
-              src={require("./assets/close.png")}
-              alt=""
-              srcset=""
-            />
+            <img id="minimize" src={require("./assets/close.png")} alt="" />
           </button>
         </div>
       </div>
