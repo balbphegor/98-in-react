@@ -40,7 +40,7 @@ export const lookup = {
   "rent free in my head": {
     ispanel: true,
     type: "iframe",
-    src: "https://www.youtube.com/embed/CMNry4PE93Y",
+    src: "https://www.youtube.com/embed/RxRXILUXSrk",
     isrc: "turtle.png",
   },
   wow: {
@@ -54,6 +54,12 @@ export const lookup = {
     type: "img",
     src: "monkey.jpeg",
     isrc: "monkey.png",
+  },
+  circus: {
+    ispanel: true,
+    type: "img",
+    src: "circus.jpeg",
+    isrc: "circus.png",
   },
   pupp3r: {
     ispanel: false,
