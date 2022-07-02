@@ -17,12 +17,12 @@ function Taskbar({ children }) {
         <img
           className="start-icon"
           src={require("./assets/tray1.png")}
-          alt="10"
+          alt=""
         ></img>
         <img
           className="start-icon"
           src={require("./assets/tray2.png")}
-          alt="10"
+          alt=""
         ></img>
         <Clock />
       </div>
