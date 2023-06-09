@@ -1,6 +1,7 @@
 import React from "react";
-
+import { lookup } from "./constants.js";
 function TaskbarTab({ title, id, updateIndex, showPanel }) {
+  const isrc_name = lookup[title]["irsc"];
   return (
     <button
       onClick={(event) => {
@@ -11,7 +12,7 @@ function TaskbarTab({ title, id, updateIndex, showPanel }) {
     >
       <img
         className="start-icon"
-        src={require("./assets/start.png")}
+        src={require(`./assets/tray1.png`)}
         alt="alt"
       ></img>
       <span className="element-text">{title}</span>

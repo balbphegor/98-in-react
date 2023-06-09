@@ -12,6 +12,6 @@ function Clock() {
       []
     );
   });
-  return <div>{clockState}</div>;
+  return <div className="clock-text">{clockState}</div>;
 }
 export default Clock;

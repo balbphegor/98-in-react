@@ -1,6 +1,14 @@
 body {
   background-color: #008083;
   height: 100%;
+  font-family: windows;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: windows;
+  src: url(../public/Windows\ Regular.ttf);
 }
 
 /*################################ PANEL STLYES ################################*/
@@ -138,18 +146,17 @@ textarea {
 }
 
 .header-buttons {
-  width: 13px;
-  height: 13px;
-  margin-top: 4px;
-  margin-left: 1px;
-  text-decoration: none;
-  border-radius: 0;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 3px;
+  margin-left: 2px;
   background-color: silver;
 }
 #minimize {
   width: 8px;
   height: 8px;
   margin-bottom: 3px;
+  margin-left: -4px;
 }
 .menubar {
   margin-top: 15px;
@@ -206,10 +213,18 @@ textarea {
   border-radius: 0;
   background-color: silver;
 }
+.clock-text {
+  font-family: windows;
+}
 .start-icon {
   width: 15px;
   height: 15px;
   margin: 0px 2px 0px 0px;
+}
+.start-text {
+  font-family: windows;
+  font-weight: bold;
+  margin-left: 0.2rem;
 }
 .divider-long,
 .divider-fat {
@@ -278,11 +293,12 @@ textarea {
 }
 .icon-name {
   margin-top: 3px;
-  font-size: 12px;
+  font-size: 0.75rem;
   display: block;
   width: 50px;
   word-wrap: break-word;
   background-color: #008083;
+  font-family: windows;
 }
 .tab-container {
   margin: 0px 2px;
