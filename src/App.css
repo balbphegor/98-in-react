@@ -4,6 +4,7 @@ body {
   font-family: windows;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 @font-face {
@@ -215,6 +216,8 @@ textarea {
 }
 .clock-text {
   font-family: windows;
+  margin-left: auto;
+  margin-right: 0.1rem;
 }
 .start-icon {
   width: 15px;
@@ -257,11 +260,15 @@ textarea {
 .element-text {
   text-overflow: ellipsis;
 }
+.stext {
+  font-weight: 900;
+}
 .tray {
   align-items: center;
   display: inline-flex;
   padding: 2px;
   margin: 3px;
+  width: 7.5rem;
   background-color: silver;
   box-shadow: inset 1px 1px #dfdfdf, 1px 0 #000, 0 1px #000, 1px 1px #000;
 }
@@ -290,6 +297,9 @@ textarea {
 .icon-img {
   width: 50px;
   height: 50px;
+}
+.menubar-text {
+  font-family: windows;
 }
 .icon-name {
   margin-top: 3px;

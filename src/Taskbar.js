@@ -8,7 +8,9 @@ function Taskbar({ children }) {
           src={require("./assets/start.png")}
           alt="10"
         ></img>
-        <div className="start-text">start</div>
+        <div className="start-text">
+          <span className="stext">start</span>
+        </div>
       </button>
       <div className="divider-long"></div>
       <div className="divider-fat"></div>

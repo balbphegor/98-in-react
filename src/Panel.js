@@ -289,7 +289,7 @@ const Panel = ({ children, updateIndex, id, title, closePanel }) => {
         <img
           className="header-icon header-decoration"
           src={require(`./assets/icon/${lookup[title]["isrc"]}`)}
-          alt="1234"
+          alt={`${title}`}
         />
         <h1 className="header-text header-decoration">{title}</h1>
         <div className="button-container">
@@ -306,9 +306,15 @@ const Panel = ({ children, updateIndex, id, title, closePanel }) => {
       </div>
       <div className="menubar">
         <div className="menu-items">
-          <button className="menu-button">file</button>
-          <button className="menu-button">edit</button>
-          <button className="menu-button">help</button>
+          <button className="menu-button">
+            <span className="menubar-text">file</span>
+          </button>
+          <button className="menu-button">
+            <span className="menubar-text">edit</span>
+          </button>
+          <button className="menu-button">
+            <span className="menubar-text">help</span>
+          </button>
         </div>
       </div>
       <div className="content-wrapper">{children}</div>

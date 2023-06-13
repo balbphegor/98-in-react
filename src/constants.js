@@ -25,7 +25,7 @@ export const lookup = {
     src: "https://www.github.com/balbphegor",
     isrc: "github.png",
   },
-  "how it all started": {
+  credit: {
     ispanel: false,
     type: "link",
     src: "https://98.js.org/",
@@ -62,12 +62,6 @@ export const lookup = {
     src: "monkey.jpeg",
     isrc: "monkey.png",
   },
-  circus: {
-    ispanel: true,
-    type: "img",
-    src: "circus.jpeg",
-    isrc: "circus.png",
-  },
   pupp3r: {
     ispanel: false,
     type: "link",
@@ -98,22 +92,5 @@ export const text_entries = [
     "or click the Linkedin icon! " +
     "\r\n" +
     "\r\n" +
-    "My name is Calvin Lin and I like golf, running, beer and all possible combinations of the three. I am bad at golf, moderately okay at running and great at drinking beer." +
-    "\r\n" +
-    "\r\n" +
-    "I am a very meticulous person. I find that working on small details (some of which may never be noticed) is a very important part of the development process. Not only does it contribute to the overall polish of the product, it provides me a peace of mind to know that I did my best." +
-    "\r\n" +
-    "I believe that web development, software engineering, anything of which requires a steady and consistent effort that is worth doing - is worth doing well, with considerable care and attention to small details." +
-    "\r\n" +
-    "\r\n" +
-    "I am a junior web developer working with HTML, CSS, Javascript with React. When the occasion arises I use Bootstrap, MongoDB and MySQL/SQLite3. I have also been writing Python (2.7) since 2015, Java and C since 2018. I know my way around the block!" +
-    "\r\n" +
-    "\r\n" +
-    "Keep it simple! The key to success is simply showing up everyday!" +
-    "\r\n" +
-    "\r\n" +
-    "UPDATE: JUNE 9TH 2023" +
-    "\r\n" +
-    "\r\n" +
-    "I will be creating another website! This new website probably won't have as much bells and whistles as this current one, but I'll use it to pretty much to journal my thoughts and showcase some stuff im working on!",
+    "Hi! I'm Calvin Lin. I like to make fullstack applications!",
 ];

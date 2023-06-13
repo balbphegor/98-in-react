@@ -14,7 +14,7 @@ const Content = (title) => {
       <img
         className="content"
         src={require(`./assets/${contentSrc}`)}
-        alt="dead pic lmao"
+        alt={`${title["title"]}`}
       />
     );
   }
