@@ -1,4 +1,5 @@
 import React from "react";
+import Tab from "./Tab.js";
 import { lookup, text_entries } from "./constants.js";
 const Content = (title) => {
   const contentDetails = lookup[title["title"]];
@@ -25,6 +26,9 @@ const Content = (title) => {
         className="content"
       ></textarea>
     );
+  }
+  if (contentType === "test") {
+    return <Tab />;
   }
 };
 

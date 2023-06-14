@@ -11,9 +11,21 @@ body {
   font-family: windows;
   src: url(../public/Windows\ Regular.ttf);
 }
-
+.entry {
+  display: flex;
+  height: 1.25rem;
+  background-color: paleturquoise;
+}
 /*################################ PANEL STLYES ################################*/
-
+.tab {
+  background-color: silver;
+  position: absolute;
+  height: inherit;
+  width: 100%;
+  display: inline-flex;
+  overflow: hidden;
+  flex-direction: column;
+}
 .panel {
   position: absolute;
   top: 16px;
@@ -259,6 +271,7 @@ textarea {
 }
 .element-text {
   text-overflow: ellipsis;
+  font-family: windows;
 }
 .stext {
   font-weight: 900;

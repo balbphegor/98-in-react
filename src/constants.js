@@ -8,7 +8,7 @@ export const lookup = {
   },
   "test button": {
     ispanel: true,
-    type: "textarea",
+    type: "test",
     src: "",
     isrc: "about.png",
     text_index: 0,
